@@ -1,0 +1,1 @@
+_event.addModifier(BuiltInRegistries.ATTRIBUTE.get(new ResourceLocation(${input$name})), ${input$modifier});

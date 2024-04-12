@@ -9,6 +9,7 @@ import net.mcreator.ui.init.L10N;
 import net.mcreator.ui.modgui.ModElementGUI;
 import net.mcreator.ui.validation.AggregatedValidationResult;
 import net.mcreator.ui.validation.ValidationGroup;
+import net.mcreator.ui.validation.Validator;
 import net.mcreator.ui.validation.component.VTextField;
 import net.mcreator.ui.validation.validators.TextFieldValidator;
 import net.mcreator.util.StringUtils;
@@ -123,8 +124,6 @@ public class AttributeGUI extends ModElementGUI<Attribute> {
             messages.add(L10N.t("elementgui.attribute.warning.minMax"));
         if (messages.size() == 1)
             return new AggregatedValidationResult.FAIL(messages.get(0));
-        else if (messages.size() > 1)
-            return new AggregatedValidationResult.MULTIFAIL(messages);
         return new AggregatedValidationResult(this.page1group);
     }
 }
