@@ -2,7 +2,8 @@
   "id": "attributes",
   "javaplugin": "net.azzier.attributes.Launcher",
   "supportedversions": [
-    202400115713
+    202400115713,
+    202400115821
   ],
   "info": {
     "name": "Attributes",
