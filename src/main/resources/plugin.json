@@ -2,14 +2,12 @@
   "id": "attributes",
   "javaplugin": "net.azzier.attributes.Launcher",
   "supportedversions": [
-    202400115713,
-    202400115821
+    2024002
   ],
   "info": {
     "name": "Attributes",
-    "version": "2.3.8",
+    "version": "2.4",
     "description": "Plugin adds attributes, attribute modifiers and custom attributes to MCreator!",
-    "author": "Azzier",
-    "updateJSONURL": "https://raw.githubusercontent.com/Azzy380/Attributes/main/update.json"
+    "author": "Azzier, NerdyPuzzle"
   }
 }
