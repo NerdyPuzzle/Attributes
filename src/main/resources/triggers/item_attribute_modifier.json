@@ -3,6 +3,10 @@
     {
       "name": "itemstack",
       "type": "itemstack"
+    },
+    {
+      "name": "Attribute modifiers trigger",
+      "type": "Attribute modifiers trigger"
     }
   ]
 }

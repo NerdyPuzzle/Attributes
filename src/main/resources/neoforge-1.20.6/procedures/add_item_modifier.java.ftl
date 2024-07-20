@@ -1,5 +1,6 @@
 <#include "attributes.ftl">
 <#include "mcitems.ftl">
+<#if false>
 <#assign attr = getAttribute(field$attribute)>
 <#assign which = getSource(field$attribute)>
 <#if which == "custom" || which == "forge">
@@ -21,10 +22,15 @@
         if(_index != -1) {
             _listtag.remove(_index);
         }
+        <#if which == "custom">
         _compoundtag.putString("AttributeName", ${getAttributeResource(field$attribute)}.getId().toString());
+        <#elseif which == "forge">
+        _compoundtag.putString("AttributeName", ${getAttributeResource(field$attribute)}.unwrapKey().get().registry().toString());
+        </#if>
         _compoundtag.putString("Slot", EquipmentSlot.${generator.map(field$slot, "slot")}.getName());
         _listtag.add(_compoundtag);
     }
 <#else>
     (${mappedMCItemToItemStackCode(input$item, 1)}).addAttributeModifier(${attr}, ${input$modifier}, EquipmentSlot.${generator.map(field$slot, "slot")});
+</#if>
 </#if>

@@ -26,10 +26,6 @@
   readable_name: "Spawn Reiforcement Chance (only zombie-like mobs)"
 - FORGE:SWIM_SPEED:
   readable_name: "Swim Speed"
-- FORGE:REACH_DISTANCE:
-  readable_name: "Reach Distance"
-- FORGE:ATTACK_RANGE:
-  readable_name: "Attack Range"
 - FORGE:ENTITY_GRAVITY:
   readable_name: "Entity Gravity"
 - FORGE:STEP_HEIGHT_ADDITION:
