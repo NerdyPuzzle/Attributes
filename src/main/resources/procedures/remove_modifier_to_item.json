@@ -3,12 +3,12 @@
     {
       "type": "input_value",
       "name": "modifier",
-      "check": "Modifier"
+      "check": "String"
     },
     {
       "type": "field_data_list_selector",
       "name": "attribute",
-      "datalist": "attribute",
+      "datalist": "attributes",
       "customEntryProviders": "attribute"
     }
   ],

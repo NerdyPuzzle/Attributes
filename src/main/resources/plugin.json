@@ -1,13 +1,12 @@
 {
-  "id": "attributes",
-  "javaplugin": "net.azzier.attributes.Launcher",
+  "id": "attribute_modifiers",
   "supportedversions": [
-    2024002
+    2025002
   ],
   "info": {
-    "name": "Attributes",
-    "version": "2.4",
-    "description": "Plugin adds attributes, attribute modifiers and custom attributes to MCreator!",
-    "author": "Azzier, NerdyPuzzle"
+    "name": "Attribute Modifiers",
+    "version": "1.0",
+    "description": "Adds attribute modifier procedure blocks for entities and items",
+    "author": "NerdyPuzzle"
   }
 }

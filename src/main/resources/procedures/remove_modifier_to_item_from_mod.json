@@ -3,7 +3,7 @@
     {
       "type": "input_value",
       "name": "modifier",
-      "check": "Modifier"
+      "check": "String"
     },
     {
       "type": "input_value",

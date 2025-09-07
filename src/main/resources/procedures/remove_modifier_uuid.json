@@ -3,7 +3,8 @@
     {
       "type": "field_data_list_selector",
       "name": "attribute",
-      "datalist": "attribute"
+      "datalist": "attributes",
+      "customEntryProviders": "attribute"
     },
     {
       "type": "input_value",
@@ -14,11 +15,6 @@
       "type": "input_value",
       "name": "modifierid",
       "check": "String"
-    },
-    {
-      "type": "field_checkbox",
-      "name": "permanent",
-      "checked": false
     }
   ],
   "inputsInline": true,
@@ -29,11 +25,10 @@
     "toolbox_id": "azz_attr",
     "toolbox_init": [
       "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>",
-      "<value name=\"modifierid\"><block type=\"text\"><field name=\"TEXT\">UUID of an modifier</field></block></value>"
+      "<value name=\"modifierid\"><block type=\"text\"><field name=\"TEXT\">modifier_name</field></block></value>"
     ],
     "fields": [
-      "attribute",
-      "permanent"
+      "attribute"
     ],
     "inputs": [
       "entity",

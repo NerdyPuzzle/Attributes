@@ -3,7 +3,7 @@
     {
       "type": "field_data_list_selector",
       "name": "attribute",
-      "datalist": "attribute",
+      "datalist": "attributes",
       "customEntryProviders": "attribute"
     },
     {
@@ -15,11 +15,6 @@
       "type": "input_value",
       "name": "modifier",
       "check": "Modifier"
-    },
-    {
-      "type": "field_checkbox",
-      "name": "permanent",
-      "checked": false
     }
   ],
   "inputsInline": true,
@@ -32,8 +27,7 @@
       "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>"
     ],
     "fields": [
-      "attribute",
-      "permanent"
+      "attribute"
     ],
     "inputs": [
       "entity",

@@ -27,7 +27,7 @@ dependencies {
 }
 
 tasks.jar {
-    archiveFileName.set("attributes.zip")
+    archiveFileName.set("attribute_modifiers.zip")
 }
 
 tasks.register('runMCreatorWithPlugin', JavaExec) {
