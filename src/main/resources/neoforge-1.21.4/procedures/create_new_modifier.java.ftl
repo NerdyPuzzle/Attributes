@@ -1,2 +1,2 @@
 <#include "mcelements.ftl">
-(new AttributeModifier(${toResourceLocation('"' + modid + ":" + input$name?replace('"', '')?replace(' ', '')?lower_case + '"')}, (double) ${input$value}, AttributeModifier.Operation.${generator.map(field$operation, "operation")}))
+(new AttributeModifier(${toResourceLocation('"' + modid + ':" +' + input$name?replace(' ', '')?lower_case)}, (double) ${input$value}, AttributeModifier.Operation.${generator.map(field$operation, "operation")}))
