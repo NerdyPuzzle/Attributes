@@ -1,5 +1,5 @@
 <#include "mcelements.ftl">
-Attribute attr${cbi} = BuiltInRegistries.ATTRIBUTE.getHolder(${toResourceLocation(input$name)}).get();
+Holder<Attribute> attr${cbi} = BuiltInRegistries.ATTRIBUTE.getHolder(${toResourceLocation(input$name)}).get();
 <#if field$checkExiting?lower_case == "true">
     if(!(((LivingEntity) ${input$entity}).getAttribute(attr${cbi}).hasModifier(${input$modifier}.id())))
 </#if>
