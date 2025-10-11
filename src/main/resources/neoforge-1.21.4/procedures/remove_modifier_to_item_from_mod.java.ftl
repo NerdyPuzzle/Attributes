@@ -1,2 +1,2 @@
 <#include "mcelements.ftl">
-_event.removeModifier(Holder.direct(BuiltInRegistries.ATTRIBUTE.getValue(${toResourceLocation(input$name)})), ${toResourceLocation('"' + modid + ":" + input$modifier?replace('"', '')?replace(' ', '')?lower_case + '"')});
+_event.removeModifier(Holder.direct(BuiltInRegistries.ATTRIBUTE.getValue(${toResourceLocation(input$name)})), ${toResourceLocation('"' + modid + ':" +' + input$modifierid?replace(' ', ''))});
