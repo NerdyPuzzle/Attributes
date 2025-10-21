@@ -1,10 +1,9 @@
 {
   "args0": [
     {
-      "type": "field_data_list_selector",
-      "name": "attribute",
-      "datalist": "attributes",
-      "customEntryProviders": "attribute"
+      "type": "input_value",
+      "name": "name",
+      "check": "String"
     },
     {
       "type": "input_value",
@@ -13,8 +12,8 @@
     },
     {
       "type": "input_value",
-      "name": "modifierid",
-      "check": "String"
+      "name": "modifier",
+      "check": "Modifier"
     }
   ],
   "inputsInline": true,
@@ -24,14 +23,12 @@
     "toolbox_id": "azz_attr",
     "toolbox_init": [
       "<value name=\"entity\"><block type=\"entity_from_deps\"></block></value>",
-      "<value name=\"modifierid\"><block type=\"text\"><field name=\"TEXT\">modifier_name</field></block></value>"
-    ],
-    "fields": [
-      "attribute"
+      "<value name=\"name\"><block type=\"text\"><field name=\"TEXT\">mod:attribute</field></block></value>"
     ],
     "inputs": [
+      "name",
       "entity",
-      "modifierid"
+      "modifier"
     ]
   }
 }
