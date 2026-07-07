@@ -1,0 +1,2 @@
+<#include "mcelements.ftl">
+_event.removeModifier(Holder.direct(BuiltInRegistries.ATTRIBUTE.getValue(${toIdentifier(input$name)})), ${toIdentifier('"' + modid + ':" +' + input$modifier?replace(' ', ''))});

@@ -1,11 +1,11 @@
 {
   "id": "attribute_modifiers",
   "supportedversions": [
-    2026001
+    2026002
   ],
   "info": {
     "name": "Attribute Modifiers",
-    "version": "1.5",
+    "version": "1.6",
     "description": "Adds attribute modifier procedure blocks for entities and items",
     "author": "NerdyPuzzle"
   }

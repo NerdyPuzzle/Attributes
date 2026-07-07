@@ -1,3 +1,3 @@
 <#include "mcelements.ftl">
-Holder<Attribute> attr${cbi} = Holder.direct(BuiltInRegistries.ATTRIBUTE.getValue(${toResourceLocation(input$name)}));
+Holder<Attribute> attr${cbi} = Holder.direct(BuiltInRegistries.ATTRIBUTE.getValue(${toIdentifier(input$name)}));
 ((LivingEntity) ${input$entity}).getAttribute(attr${cbi}).removeModifier(${input$modifier}.id());
