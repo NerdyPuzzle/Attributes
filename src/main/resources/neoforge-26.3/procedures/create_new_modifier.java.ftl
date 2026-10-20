@@ -1,0 +1,2 @@
+<#include "mcelements.ftl">
+(new AttributeModifier(${toIdentifier('"' + modid + ':" +' + input$name?replace(' ', ''))}, (double) ${input$value}, AttributeModifier.Operation.${generator.map(field$operation, "operation")}))
